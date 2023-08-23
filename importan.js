@@ -193,40 +193,175 @@
 
 
 // max number
-const maxNum = Math.max(30,789,644,4232,2234,5656,70)
-console.log(maxNum);
+// const maxNum = Math.max(30,789,644,4232,2234,5656,70)
+// console.log(maxNum);
 
-const number = [10, 4, 234, 12, 123, 12, 76];
-// not a number NaN 
-const arrayNum = Math.max(number);
-console.log(arrayNum);
+// const number = [10, 4, 234, 12, 123, 12, 76];
+// // not a number NaN 
+// const arrayNum = Math.max(number);
+// console.log(arrayNum);
 
-// but problem solve if use Math.max(...number);
-const numberMax = Math.max(...number); 
-console.log(numberMax);
+// // but problem solve if use Math.max(...number);
+// const numberMax = Math.max(...number); 
+// console.log(numberMax);
 
-// jodi number2 namer array theke sob number Element alada korte chai taholeo three dot (...number2) dibo
+// // jodi number2 namer array theke sob number Element alada korte chai taholeo three dot (...number2) dibo
 
-const number2 = [12, 40, 50, 34, 67];
-console.log(...number2);
+// const number2 = [12, 40, 50, 34, 67];
+// console.log(...number2);
 
 
-// spread operator to copy
+// // spread operator to copy
+
+// // const nums1 = [6, 2, 8, 3, 8]
+// // const nums2 = nums1;
+// // nums2.push(22);
+// // console.log(nums1);
+// // console.log(nums2);
 
 // const nums1 = [6, 2, 8, 3, 8]
 // const nums2 = nums1;
-// nums2.push(22);
-// console.log(nums1);
-// console.log(nums2);
+// const final = [...nums1]  // copy
+// console.log(final);
+// nums2.push(30);
+// console.log(final);
+// console.log(nums1)
 
-const nums1 = [6, 2, 8, 3, 8]
-const nums2 = nums1;
-const final = [...nums1]  // copy
-console.log(final);
-nums2.push(30);
-console.log(final);
-console.log(nums1)
+// // advance
+// const newNum = [...nums1, 44]; //copy and set or add
+// console.log(newNum)
 
-// advance
-const newNum = [...nums1, 44]; //copy and set or add
-console.log(newNum)
+
+// // destructure
+
+// const actor = {
+//     name: 'Ananto',
+//     age: 30,
+//     phone: '01717653844',
+//     money: 27034349301
+// }
+// // normal
+// // const phone = actor.phone;
+// // const name = actor.name;
+// // const age = actor.age;
+
+// // destructure chaile object property value change kora jabe
+// const {phone, age: boyos} = actor
+
+
+// console.log(phone);
+// // console.log(age);
+// console.log(boyos);
+
+// // destructure array
+
+// // const numbers = [54, 96]
+// // const [first, second] = numbers;
+
+// // x= 12 y= 56
+// const [x, y] = [12, 56];
+
+
+// //
+// function getDouble(a, b){
+//     return [a*2, b*2];
+// }
+
+// const [first, second] = getDouble(5, 6);
+// console.log(first, second);
+
+
+
+
+// // keys and values
+// const obj = {
+//     name: 'glass',
+//     color: 'red',
+//     price: 12,
+//     isCleaned: true
+// }
+
+// console.log(obj);
+
+// keys gula dibe object er
+// const keys = Object.keys(obj)
+// console.log(keys)
+
+// // values gula dibe object er
+// const values = Object.values(obj)
+// console.log(values);
+
+// // entries mane keys and values duto dibe
+// const entries = Object.entries(obj);
+// console.log(entries)
+
+// delete korte lokhbo
+// delete obj.isCleaned;
+// console.log(obj)
+
+// notun Object bananor niyom
+
+// const {isCleaned, ...shortObj} = obj;
+// console.log(shortObj);
+
+
+// unfreeze
+// obj.money = 2344
+// delete obj.price;
+// delete obj.color;
+// console.log(obj);
+
+// freeze
+// Object.freeze(obj);
+// obj.isCleaned = false;
+// delete obj.price;
+// delete obj.name;
+// console.log(obj);
+
+// seal mane modify hobe delete/add kora jabe na
+
+// Object.seal(obj);
+// obj.price = 6777;
+// delete obj.price;
+// console.log(obj);
+
+
+
+
+// loop last video
+
+// const numbers = [2, 5, 8, 3, 9];
+// for(const num of numbers){
+//     console.log(num);
+// }
+
+// const king = 'Siraj Ud Doula';
+// for (const char of king) {
+//     // console.log(char);
+// }
+
+// const obj = {
+//     name: 'glass',
+//     color: 'red',
+//     price: 12,
+//     isCleaned: true
+// }
+// this not work
+// for(const key of obj){
+//     console.log(key);
+// }
+
+// work
+// for(const key in obj){
+//     const value = obj[key];
+//     console.log(key, value);
+// }
+
+// try Object keys
+// const keys = Object.keys(obj);
+// console.log(keys);
+// for(const key of keys){
+//     const value = obj[key]
+//     console.log(key, value);
+// }
+
